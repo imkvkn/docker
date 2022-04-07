@@ -8,20 +8,30 @@ export FORMAT="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports
 docker ps --format=$FORMAT
 
 
+==========================================================================
+
 Dockerfile
 commands in it example RUN,FROM,CMD,WORKDIR,ADD
 
+==========================================================================
+
+
 .dockerignore
-include files which u want to ignore
 
+to include files which u want to ignore
 
-see images:
+==========================================================================
+
+**see images:**
 
 docker images or docker image ls
 
+===========================================================================
 
 build image:
 docker build -t(for tag) name_of_tag:latest
+
+===========================================================================
 
 run container using image:
 docker run image_name:version(usually latest)
@@ -32,7 +42,7 @@ docker run --name name_of_container -d (*for detach mode*) -p 8000:80 image_name
 8000 is host(browser port)
 80 is container port
 
-
+===========================================================================
 
 for exploring container:
 
